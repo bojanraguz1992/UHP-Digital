@@ -1,0 +1,45 @@
+.latest-news {
+  position: relative;
+
+  .blog {
+    .blog-image {
+      position: relative;
+      .news-cut {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-style: solid;
+        border-width: 0 0 100px 100px;
+        border-color: transparent transparent #fff transparent;
+        width: 0;
+        height: 0;
+        p {
+          position: relative;
+          top: 50px;
+          right: 25px;
+          line-height: 16px;
+        }
+      }
+      
+    }
+  }
+  .blog-heading {
+    border-bottom: 1px solid $gray;
+  }
+  .blog-desc{
+    .ellipsis {
+      height: 120px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 992px){
+  .latest-news{
+    .blog-image{
+      .exibition{
+        width: 100%;
+      }
+    }
+  }
+}

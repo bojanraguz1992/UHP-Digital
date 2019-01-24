@@ -1,0 +1,42 @@
+.service {
+  .services {
+    &:after {
+      content: '';
+      height: 140px;
+      width: 2px;
+      background: lightgray;
+      position: absolute;
+      top: 40px;
+      right: 0;
+    }
+
+    .services-img {
+      span {
+        font-size: 33px;
+        background-color: $blue;
+        color: $white;
+        padding: 48px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .grow {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .service {
+    .services {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
